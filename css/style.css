@@ -1,0 +1,82 @@
+body,
+html {
+  height: 100%;
+  margin: 0;
+  font-size: 16px;
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  line-height: 1.7em;
+  color: #666;
+}
+
+.p-img-1,
+.p-img-2,
+.p-img-3 {
+  position: relative;
+  opacity: 0.7;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  /* fixed = parallax */
+  /* scroll = normal */
+  background-attachment: fixed;
+}
+
+.p-img-1 {
+  background-image: url("../img/aerial-architectural-design-architecture-buildings-373912.jpg");
+  min-height: 100%;
+}
+
+.p-img-2 {
+  background-image: url("../img/bokeh-night-lights-city-9044.jpg");
+  min-height: 400px;
+}
+
+.p-img-3 {
+  background-image: url("../img/photography-of-roadway-during-dusk-1034662.jpg");
+  min-height: 400px;
+}
+
+.section {
+  text-align: center;
+  padding: 50px 80px;
+}
+
+.section-light {
+  background-color: #f4f4f4;
+  color: #666;
+}
+
+.section-dark {
+  background-color: #282e34;
+  color: #ddd;
+}
+
+.p-text {
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  text-align: center;
+  color: #000;
+  font-size: 26px;
+  letter-spacing: 8px;
+  text-transform: uppercase;
+}
+
+.border {
+  background-color: #111;
+  color: #fff;
+  padding: 20px;
+}
+
+.trans {
+  background-color: transparent;
+}
+
+@media (max-width: 568px) {
+  .p-img-1,
+  .p-img-2,
+  .p-img-3 {
+    background-attachment: scroll;
+  }
+}
